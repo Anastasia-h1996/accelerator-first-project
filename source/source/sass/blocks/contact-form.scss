@@ -1,0 +1,114 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  background-color: #102654;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.contact-form__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.contact-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.contact-form__inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.contact-form__label {
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
+}
+
+.contact-form__input {
+  padding: 4px 0px;
+  font-size: 14px;
+  line-height: 22px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #74819C;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding: 6px 0px 2px;
+  }
+}
+
+.contact-form__input:focus {
+  outline: 1px solid #ffffff;
+}
+
+.contact-form__input:not(:placeholder-shown):invalid {
+  border-color: #ff121f;
+  outline-color: #ff121f;
+}
+
+.contact-form__input:not(:placeholder-shown):focus:invalid {
+  border-color: transparent;
+  outline-color: #ff121f;
+}
+
+.contact-form__inputs label {
+  position: relative;
+}
+
+.contact-form__error {
+  display: none;
+  position: absolute;
+  margin-top: 2px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ff121f;
+  left: 0;
+  text-align: start;
+}
+
+.contact-form__error--error {
+  display: block;
+}
+
+.contact-form__input:not(:placeholder-shown):invalid + .contact-form__error {
+  display: block;
+}
+
+.contact-form__button {
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 25px 24px;
+  }
+}

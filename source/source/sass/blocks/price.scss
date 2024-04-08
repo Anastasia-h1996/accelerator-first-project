@@ -1,0 +1,67 @@
+.price {
+  position: relative;
+  background-color: #f8f9fc;
+}
+
+.price__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  padding: 41px 15px;
+  min-width: 320px;
+  max-width: 1366px;
+  margin: 0 auto;
+  background-color: inherit;
+
+  @media (min-width: $tablet-width) {
+    gap: 36px;
+    padding: 61px 194px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+    padding: 100px 103px;
+  }
+}
+
+.price__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  margin: 0;
+  padding-right: 1px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+    line-height: 54px;
+    padding-right: 0;
+  }
+}
+
+.price__picture-container {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  bottom: -100px;
+  left: 0;
+}
+
+.price__picture {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    transform: translate(251px, -62px);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(615px, -50.5px);
+  }
+}

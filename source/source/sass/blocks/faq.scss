@@ -1,0 +1,38 @@
+.faq__container {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  padding: 71px 15px;
+  margin: 0 auto;
+  max-width: 1366px;
+
+  @media (min-width: $tablet-width) {
+    gap: 44px;
+    padding: 61px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 49px;
+    padding: 100px 103px;
+  }
+}
+
+.faq__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+    line-height: 54px;
+    text-align: start;
+  }
+}

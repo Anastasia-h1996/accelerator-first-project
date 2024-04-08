@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 1366px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  padding: 71px 15px 70px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 164px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 103px 60px;
+    width: 50%;
+  }
+}

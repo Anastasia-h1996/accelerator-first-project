@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-width: $mobile-width;
+  max-width: $desktop-width;
+  box-sizing: border-box;
+  padding: 0 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 103px;
+  }
+}

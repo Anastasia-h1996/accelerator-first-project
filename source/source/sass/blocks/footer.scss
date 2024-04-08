@@ -1,0 +1,143 @@
+.footer {
+  background-color: #030A1A;
+  color: #ffffff;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding: 40px 15px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3px;
+    padding: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 103px;
+  }
+}
+
+.footer__logo {
+  min-width: 100px;
+  height: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 110px;
+    height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 130px;
+    height: 26px;
+  }
+}
+
+.footer__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  row-gap: 20px;
+
+
+  @media (min-width: $tablet-width) {
+    margin: 2px 0 0 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 2px 0 0 81px;
+  }
+}
+
+.footer__nav-item {
+  margin-right: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 30.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 82.5px;
+  }
+}
+
+.footer__nav-item a {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  padding-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    gap: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 10px;
+  }
+}
+
+
+.footer__social-link {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  &::before {
+    display: block;
+    content: "";
+    background-color: #030a1a;
+    width: 100%;
+    height: 100%;
+    mask-repeat: no-repeat;
+  }
+}
+
+.footer__social-link--vk {
+  &::before {
+    mask-image: url("/__spritemap#sprite-social-vk-view");
+    mask-position: 50%;
+    mask-size: 13px 8px;
+  }
+}
+
+.footer__social-link--ok {
+
+  &::before {
+    mask-image: url("/__spritemap#sprite-social-ok-view");
+    mask-position: 50%;
+    mask-size: 10px 17px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      mask-position: 54% 50%;
+    }
+  }
+}
+
+.footer__social-link--reddit {
+  &::before {
+    mask-image: url("/__spritemap#sprite-social-reddit-view");
+    mask-position: 50%;
+    mask-size: 15px 15px;
+  }
+}
